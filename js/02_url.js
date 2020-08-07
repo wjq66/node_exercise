@@ -1,6 +1,6 @@
-http = require("http");
-url = require("url");
-server = http.createServer(function(req,res){
+var http = require("http");
+var url = require("url");
+var server = http.createServer(function(req,res){
 	res.writeHead(200,{"Content-Type":"text/html;charset=UTF8"});
 	var queryObj = url.parse(req.url,true).query;
 	var name = queryObj.name;

@@ -6,7 +6,7 @@ app.get("/",function(req,res,next){
 	console.log("1");
 	next();
 })
-app.get("/",function(req,res){
+app.get("/",function(){
 	console.log("2");
 })
 app.listen(3000)

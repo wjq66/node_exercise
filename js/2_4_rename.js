@@ -16,7 +16,6 @@ var server = http.createServer(function(req,res){
 			if(err){
 				throw err; 
 			}
-			 
 			console.log(util.inspect({fields:fields,files:files}));
 			
 			/*执行改名*/
